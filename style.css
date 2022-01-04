@@ -16,7 +16,7 @@
 #tictacbox{
     display: flex;
     flex-flow: row wrap; 
-
+    text-align: center;
 }
 
 #box1{
