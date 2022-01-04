@@ -9,17 +9,13 @@ let box7 = document.getElementById("box7");
 let box8 = document.getElementById("box8");
 let box9 = document.getElementById("box9");
 
-tictacbox.addEventListener("click",handleOnTicTac);
 
-
-function handleOnTicTac(e){
-    e.target.innerText = "x"
-    console.log(e.target)
+const mark = ["O","X"];
+let val = 0;
+function handleOnTicTac(e) {
+    val++;
+    val = val%2;
+     e.target.innerText = mark[val];
+     console.log(val);
 }
-
-let y = 0;
-    {
-    y++
-    }
-    
-console.log(y);
+tictacbox.addEventListener("click", handleOnTicTac);
