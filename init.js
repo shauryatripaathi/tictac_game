@@ -13,9 +13,19 @@ let box9 = document.getElementById("box9");
 const mark = ["O","X"];
 let val = 0;
 function handleOnTicTac(e) {
-    val++;
-    val = val%2;
+    if(e.target.innerText == ""){
+        val++;
+        val = val%2;
      e.target.innerText = mark[val];
      console.log(val);
+    }
+    
+    else if(box1.innerText != "" && box2.innerText != "" && box3.innerText != "" && box4.innerText != "" && box5.innerText != "" && box6.innerText != "" && box7.innerText != "" && box8.innerText != "" && box9.innerText != ""){
+        alert("game is over");
+    }
+
+    else if(e.target.innerText != ""){
+        alert("please select emty box")
+    }
 }
 tictacbox.addEventListener("click", handleOnTicTac);
