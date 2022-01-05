@@ -13,7 +13,7 @@
     margin-left: 40px;
 }
 
-#tic-tac-box{
+#tic-tac-grid{
     display: flex;
     flex-flow: row wrap; 
     text-align: center;
