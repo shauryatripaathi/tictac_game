@@ -1,4 +1,4 @@
-let tictacbox = document.getElementById("tic-tac-box");
+let tictacgrid = document.getElementById("tic-tac-grid");
 let box1 = document.getElementById("box1");
 let box2 = document.getElementById("box2");
 let box3 = document.getElementById("box3");
@@ -10,22 +10,38 @@ let box8 = document.getElementById("box8");
 let box9 = document.getElementById("box9");
 
 
-const mark = ["O","X"];
+const mark = ["O", "X"];
 let val = 0;
-function handleOnTicTac(e) {
-    if(e.target.innerText == ""){
-        val++;
-        val = val%2;
-     e.target.innerText = mark[val];
-     console.log(val);
-    }
-    
-    else if(box1.innerText != "" && box2.innerText != "" && box3.innerText != "" && box4.innerText != "" && box5.innerText != "" && box6.innerText != "" && box7.innerText != "" && box8.innerText != "" && box9.innerText != ""){
-        alert("game is over");
+function handleOnGridClick(e) {
+    if (e.target.innerText != "") {
+        alert("please select emty box")
+        return
     }
 
-    else if(e.target.innerText != ""){
-        alert("please select emty box")
+    val++;
+    val = val % 2;
+    e.target.innerText = mark[val];
+    console.log(val);
+
+    checkIfGameIsOver();
+}
+
+tictacgrid.addEventListener("click", handleOnGridClick);
+
+function checkIfGameIsOver() {
+    if (
+        box1.innerText != "" &&
+        box2.innerText != "" &&
+        box3.innerText != "" &&
+        box4.innerText != "" &&
+        box5.innerText != "" &&
+        box6.innerText != "" &&
+        box7.innerText != "" &&
+        box8.innerText != "" &&
+        box9.innerText != ""
+    ) {
+        setTimeout(function () {
+            alert("----Game Over----")
+        });
     }
 }
-tictacbox.addEventListener("click", handleOnTicTac);
