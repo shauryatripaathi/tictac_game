@@ -88,3 +88,39 @@ else if(
     });
     }    
 }
+
+
+
+
+
+
+/*
+
+function checkIfPlayerWon(sign) {
+    if (
+        tile11.innerText == sign && tile12.innerText == sign && tile13.innerText == sign ||
+        tile21.innerText == sign && tile22.innerText == sign && tile23.innerText == sign ||
+        tile31.innerText == sign && tile32.innerText == sign && tile33.innerText == sign ||
+        tile11.innerText == sign && tile21.innerText == sign && tile31.innerText == sign ||
+        tile12.innerText == sign && tile22.innerText == sign && tile32.innerText == sign ||
+        tile13.innerText == sign && tile23.innerText == sign && tile33.innerText == sign ||
+        tile31.innerText == sign && tile22.innerText == sign && tile13.innerText == sign ||
+        tile11.innerText == sign && tile22.innerText == sign && tile33.innerText == sign
+    ) {
+        checkIfPlayerWon("X")
+        playerInfoBox.innerText = "Player 1 Won";
+        setTimeout(function () {
+            alert("Player 1 Won");
+            location.reload();
+        })
+        
+        checkIfPlayerWon("O")
+        playerInfoBox.innerText = "Player 2 Won";
+        setTimeout(function () {
+            alert("Player 2 Won");
+            location.reload();
+        });
+    }
+    }
+
+*/
