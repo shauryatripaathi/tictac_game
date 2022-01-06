@@ -1,14 +1,15 @@
 let tictacgrid = document.getElementById("tic-tac-grid");
-let box1 = document.getElementById("box1");
-let box2 = document.getElementById("box2");
-let box3 = document.getElementById("box3");
-let box4 = document.getElementById("box4");
-let box5 = document.getElementById("box5");
-let box6 = document.getElementById("box6");
-let box7 = document.getElementById("box7");
-let box8 = document.getElementById("box8");
-let box9 = document.getElementById("box9");
-
+let tile11 = document.getElementById("tile11");
+let tile12 = document.getElementById("tile12");
+let tile13 = document.getElementById("tile13");
+let tile21 = document.getElementById("tile21");
+let tile22 = document.getElementById("tile22");
+let tile23 = document.getElementById("tile23");
+let tile31 = document.getElementById("tile31");
+let tile32 = document.getElementById("tile32");
+let tile33 = document.getElementById("tile33");
+let playerInfo = document.getElementById("playerInfo");
+playerInfo.innerText = "LET'S START THE GAME -- Player 1's turn";
 
 const mark = ["O", "X"];
 let val = 0;
@@ -17,11 +18,12 @@ function handleOnGridClick(e) {
         alert("please select emty box")
         return
     }
-
+    
     val++;
     val = val % 2;
     e.target.innerText = mark[val];
     console.log(val);
+    playerInfo.innerText = `Player ${val+1}'s turn`;
 
     checkIfGameIsOver();
 }
@@ -30,18 +32,19 @@ tictacgrid.addEventListener("click", handleOnGridClick);
 
 function checkIfGameIsOver() {
     if (
-        box1.innerText != "" &&
-        box2.innerText != "" &&
-        box3.innerText != "" &&
-        box4.innerText != "" &&
-        box5.innerText != "" &&
-        box6.innerText != "" &&
-        box7.innerText != "" &&
-        box8.innerText != "" &&
-        box9.innerText != ""
+        tile11.innerText != "" &&
+        tile12.innerText != "" &&
+        tile13.innerText != "" &&
+        tile21.innerText != "" &&
+        tile22.innerText != "" &&
+        tile23.innerText != "" &&
+        tile31.innerText != "" &&
+        tile32.innerText != "" &&
+        tile33.innerText != ""
     ) {
         setTimeout(function () {
             alert("----Game Over----")
+            location.reload();
         });
     }
 }
