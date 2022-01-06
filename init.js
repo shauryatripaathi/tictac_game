@@ -8,8 +8,8 @@ let tile23 = document.getElementById("tile23");
 let tile31 = document.getElementById("tile31");
 let tile32 = document.getElementById("tile32");
 let tile33 = document.getElementById("tile33");
-let playerInfo = document.getElementById("playerInfo");
-playerInfo.innerText = "LET'S START THE GAME -- Player 1's turn";
+let playerInfoBox = document.getElementById("playerInfo");
+playerInfoBox.innerText = "LET'S START THE GAME -- Player 1's turn";
 
 const mark = ["O", "X"];
 let val = 0;
@@ -23,7 +23,7 @@ function handleOnGridClick(e) {
     val = val % 2;
     e.target.innerText = mark[val];
     console.log(val);
-    playerInfo.innerText = `Player ${val+1}'s turn`;
+    playerInfoBox.innerText = `Player ${val+1}'s turn`;
 
     checkIfGameIsOver();
 }
