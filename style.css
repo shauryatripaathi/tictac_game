@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-#box1{
+#tile11{
    border: 1px solid black;
     width: 80px;
     height: 80px;
@@ -28,7 +28,7 @@
 }
 
 
-#box2{
+#tile12{
     border: 1px solid black;
      width: 80px;
      height: 80px;
@@ -37,7 +37,7 @@
  }
 
  
-#box3{
+#tile13{
     border: 1px solid black;
      width: 80px;
      height: 80px;
@@ -45,7 +45,7 @@
  }
 
  
-#box4{
+#tile21{
     border: 1px solid black;
     width: 80px;
     height: 80px;
@@ -54,7 +54,7 @@
  }
 
  
-#box5{
+#tile22{
     border: 1px solid black;
     width: 80px;
     height: 80px;
@@ -63,7 +63,7 @@
  }
  
  
- #box6{
+ #tile23{
      border: 1px solid black;
      width: 80px;
      height: 80px;
@@ -71,7 +71,7 @@
   }
  
   
- #box7{
+ #tile31{
      border: 1px solid black;
      width: 80px;
      height: 80px;
@@ -79,14 +79,14 @@
   }
  
   
- #box8{
+ #tile32{
      border: 1px solid black;
      width: 80px;
     height: 80px;
     border-right: 0px;
   }
 
-  #box9{
+  #tile33{
     border: 1px solid black;
     width: 80px;
     height: 80px;
