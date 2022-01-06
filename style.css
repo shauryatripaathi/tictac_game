@@ -91,3 +91,14 @@
     width: 80px;
     height: 80px;
   }
+
+  #playerInfo{
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 110px;
+    border: 1px solid black;
+    width: 1000px;
+    height : 20px;
+    text-align: center;
+    color: red;
+  }
